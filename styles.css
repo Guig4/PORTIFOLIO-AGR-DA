@@ -1,0 +1,652 @@
+
+@font-face {
+    font-family: 'Code';
+    src: url('./FiraCode-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nasa';
+    src: url('./nasalization-rg.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: conic-gradient(from 180deg at -0.00% 126.92%, #D726D2 36deg, #5D4EFC 293deg);
+  }
+  
+  header{
+    margin: 0;
+    padding: 0;
+    position: relative; 
+    top: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url('https://thumbs.dreamstime.com/b/fundo-%C3%BAnico-azul-programa%C3%A7%C3%A3o-do-php-na-tela-laptop-c%C3%B3digo-programa-html-css-site-computador-no-port%C3%A1til-em-desenvolvimento-166653729.jpg'); /* Caminho para a imagem */
+    background-size: 100% auto; /* Faz a imagem cobrir toda a área */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+    
+    
+  }
+  
+  h1{
+    
+    text-align: center; 
+    color: #EAEAEA;
+    font-size: 70px; 
+    font-family: 'Nasa', 'Times'; 
+    font-weight: 1000;
+    
+    
+    
+  }
+  h2{
+    font-family: 'Code', 'Times';
+    color: #EAEAEA;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  a{
+    text-decoration: none;
+  }
+  p{
+    font-family: 'Code', 'Times';
+    color: #EAEAEA;
+  }
+  
+  .content{
+    width: 99%; 
+    height: auto; 
+    margin-top: 100px; 
+    margin: 0 auto; 
+    background: black
+    
+  }
+  
+  .container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Espaça uniformemente os elementos */
+    height: 400px;
+    width: 100%; /* Ocupa a largura total */
+    padding-top: 50px;/* Ajuste conforme necessário para posicionamento vertical */
+    flex-wrap: wrap;
+  }
+
+  
+  .myimgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 265px; 
+    height: 265px; 
+    background: conic-gradient(from 180deg at 0.00% 100.00%, #D726D2 32deg, #3A86FF 290deg); 
+    border-radius: 100%;
+  }
+  
+  .myimg{
+    width: 262px; 
+    height: 262px; 
+    border-radius: 100%
+  }
+
+  .sobre_mim{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto; /* Ajusta automaticamente conforme o conteúdo */
+    text-align: center; /* Centraliza o texto */
+    font-weight: 400;
+  }
+  
+  .sobre{
+    width: 194px; 
+    height: auto; 
+    text-align: left;
+    font-size: 30px; 
+    font-weight: 400; 
+    word-wrap: break-word
+  }
+  
+  .textos{
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400; 
+    word-wrap: break-word
+  }
+  .davi, .david{
+    color: #9D4EDD; 
+    font-size: 16px; 
+    font-weight: 400; 
+    word-wrap: break-word
+  }
+  
+  /*responsivo de container*/
+  
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Alinha os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+        height: auto; /* Permite que o contêiner se ajuste */
+    }
+
+    .myimgdiv {
+        width: 200px; /* Reduz o tamanho em telas menores */
+        height: 200px;
+    }
+
+    .myimg {
+        width: 196px; 
+        height: 196px;
+    }
+
+    .sobre_mim {
+        width: 90%; /* Reduz a largura para caber melhor em telas menores */
+    }
+
+    .sobre {
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+
+    .textos, .davi, .david {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    .myimgdiv {
+        width: 150px; /* Tamanhos ainda menores */
+        height: 150px;
+    }
+
+    .myimg {
+        width: 146px;
+        height: 146px;
+    }
+
+    .sobre {
+        font-size: 20px; /* Fonte menor para ajustar */
+    }
+
+    .textos, .davi, .david {
+        font-size: 12px; /* Fonte menor para melhor leitura */
+    }
+}
+  
+  .contatos-cell{
+    display: none;
+  }
+  
+  .contatos1{
+    width: 372px; 
+    height: 305px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center;
+    background: conic-gradient(from 180deg at 0.00% 100.00%, #D726D2 36deg, #5D4EFC 293deg); 
+    border-radius: 30px
+  }
+  
+  .contatos2{
+    width: 367px; 
+    height: 300px; 
+    background: black; 
+    border-radius: 30px
+  }
+
+  .imgcont1{
+    width: 44px; 
+    height: 43px; 
+    border-radius: 17px; 
+  }
+  
+  .imgcont2{
+    width: 44px; 
+    height: 47px; 
+    border-radius: 17px
+  }
+  
+  .imgcont3{
+    width: 44px; 
+    height: 44px; 
+    border-radius: 17px
+  }
+  .contact-item {
+    
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinha verticalmente ao centro */
+    gap: 10px; /* Espaçamento entre imagem e texto */
+    padding: 15px;
+    margin: 8px;
+    border-radius: 100px;
+    transition: transform 0.5 ease, background 0.5 ease, box-shadow 0.5 ease;
+    cursor: pointer;
+  }
+  .contact-item:hover{
+    transform: scale(1.05);
+    background: conic-gradient(from 180deg at 0.00% 100.00%, #D726D2 36deg, #5D4EFC 293deg);
+    box-shadow: 0 0 1px 1px #923ce9;
+    
+  }
+  .ctitem{
+    
+    transition: color 0.5 ease;
+  }
+  
+  
+  .contact-item:hover .ctitem{
+    color: black;
+  }
+  
+  
+  @media (max-width: 1100px){
+    
+    h1{
+      font-size: 55px;
+      padding-top: 20px;
+    }
+    
+    
+    nav{
+     
+     background-repeat: no-repeat;
+    }
+    .contatos-cell{
+      padding-top: 13px;
+      display: flex;
+      
+    }
+    
+    .clickc{
+      display: flex; /* Ativa o Flexbox */
+      align-items: center; /* Alinha os itens verticalmente no centro */
+      gap: 2px; /* Espaçamento horizontal entre os filhos (ajuste conforme necessário) */
+      height: 23px;
+      width: auto;
+      cursor: pointer;
+      font-size: 20px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background-color: hsla(0, 0%, 10%, 0.2); /* Fundo semi-transparente */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Borda com opacidade */
+      backdrop-filter: blur(10px); /* Efeito de desfoque */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    
+    
+    .clickctext{
+      color: #EAEAEA;
+      font-size: 20px;
+      font-family: 'Code';
+    }
+    
+    .menu{
+      width: 27px;
+      height: 22px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    
+    
+    .new-box-link {
+      max-width: 150px;
+      min-width: 75px;
+      text-decoration: none;
+      display: inline-block;
+      top: 10px;
+      gap: 6px;
+    }
+
+    .new-box {
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 20px;
+      background-color: hsla(0, 0%, 10%, 0.2); 
+      border: 1px solid rgba(255, 255, 255, 0.3); 
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      white-space: nowrap; /* Previne quebra de linha no contêiner */
+      overflow: hidden; 
+      
+    }
+    
+    .new-box3{
+      max-width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 20px;
+      background-color: hsla(0, 0%, 10%, 0.2); 
+      border: 1px solid rgba(255, 255, 255, 0.3); 
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      white-space: nowrap; /* Previne quebra de linha no contêiner */
+      overflow: hidden; 
+    }
+    .new-box3 img{
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    .new-box img{
+      
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+    
+    .textconta{
+      flex-grow: 1; /* Permite que o texto ocupe o espaço restante no contêiner */
+      max-width: calc(100% - 30px);
+      font-size: 20px;
+      font-family: 'Code';
+      color: #EAEAEA;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    
+    
+    .contatos1{
+      display: none;
+    }
+    
+    
+  }
+  
+  
+  
+  
+  .projects{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+  }
+  
+  .hp{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  .hcjrc{
+    width: 100%;
+    max-width: 826px;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from 90deg at 0.00% 0.00%, #9D4EDD 36deg, #5D4EFC 292deg); 
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .fundop1{
+    width: 95%;
+    max-width: 821px;
+    height: 95%; 
+    background: black; 
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .imgs{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .th{
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: 400; 
+    word-wrap: break-word
+  }
+  
+  .imgh{
+    width: 100%;
+    max-width: 499px; 
+    height: auto; 
+    border-radius: 20px;
+    object-fit: cover; 
+  }
+  
+  .imgr{
+    width: 100%;
+    max-width: 174px; 
+    height: auto; 
+    border-radius: 20px;
+    object-fit: cover; 
+  }
+  
+  
+  .pc{
+    width: 90%;
+    max-width: 235px; 
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from 180deg at 0.00% 100.00%, #9D4EDD 36deg, #5D4EFC 292deg); 
+    border-radius: 20px;
+  }
+  
+  .fundop2{
+    width: 95%;
+    max-width: 230px; 
+    height: auto;
+    background: black; 
+    border-radius: 20px;
+  }
+  
+  .imgpy{
+    width: 80%;
+    max-width: 165px; 
+    height: auto; 
+    border-radius: 20px;
+  }
+  
+  .py{
+    
+    text-align: center;
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 5px;
+  }
+  
+  .imgpyy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 768px) {
+  .projects {
+    font-size: 1.5rem; 
+  }
+
+  .hp {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .hcjrc {
+    max-width: 90%;
+  }
+
+  .imgs {
+    gap: 10px; 
+  }
+
+  .th {
+    font-size: 1.2rem;
+  }
+
+  .imgh, .imgr, .imgpy {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    font-size: 1rem; /* Fonte menor em telas pequenas */
+  }
+
+  .hp {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+  }
+
+  .th {
+    font-size: 1rem; /* Fonte menor para títulos */
+  }
+
+  .hcjrc, .pc {
+    width: 100%; /* Largura total em telas menores */
+    max-width: none; /* Remover limite */
+    margin-bottom: 20px ;
+  }
+  .pc{
+    max-width: 235px;
+  }
+
+  .imgpy {
+    width: 100%;
+  }
+}
+  
+  
+  .rest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 23px;
+  }
+  
+  .jc, .csc, .phpc, .cobolc {
+  width: 230px; /* Largura fixa para garantir alinhamento */
+  height: 249px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: conic-gradient(from 180deg at 0.00% 100.00%, #9D4EDD 36deg, #5D4EFC 292deg);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+  .fundop3, .fundop4, .fundop5, .fundop6 {
+  width: 224px; /* Ajuste conforme necessário */
+  height: 244px;
+  background: black;
+  border-radius: 20px;
+}
+
+
+
+.jt, .cst, .phpt, .cobolt {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+ .imgjj, .imgcss, .imgphpp, .imgcoboll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgj {
+  width: 152px;
+  height: 152px;
+  border-radius: 20px;
+}
+
+.imgcs {
+  border-radius: 20px;
+  width: 163px;
+  height: 163px;
+}
+
+.imgphp {
+  width: 173px;
+  height: 145px;
+  border-radius: 20px;
+}
+
+.imgcobol {
+  width: 217px;
+  height: 139px;
+  border-radius: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .rest {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Ajustar o espaçamento em telas menores */
+    margin-top: 15px;
+  }
+
+  .jc, .csc, .phpc, .cobolc {
+    width: calc(50% - 12px); /* Dois elementos por linha */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+  }
+
+  .fundop3, .fundop4, .fundop5, .fundop6 {
+    width: 95%; 
+    height: 95%;
+  }
+
+  .imgj, .imgcs, .imgphp, .imgcobol {
+    max-width: 100%; /* Garantir que as imagens sejam redimensionadas */
+    height: auto; /* Proporcional à largura */
+  }
+}
