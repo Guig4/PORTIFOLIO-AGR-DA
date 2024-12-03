@@ -31,17 +31,17 @@ function addDivs(clickedDiv) {
       const text = document.createElement('span');
       
       if (i===1){
-        link.href = 'mailto:daviddevdobrasil@gmail.com?subject=Entrevista&body=Olá,%20gostaria%20de%20marcar%20uma%20entrevista%20com%20você.%20Tem%20algum%20horário%20disponível?';
+        link.href = 'mailto:Guilherme22122004@gmail.com?subject=Entrevista&body=Olá,%20gostaria%20de%20marcar%20uma%20entrevista%20com%20você.%20Tem%20algum%20horário%20disponível?';
         img.src = './gmail.png';
-        text.textContent = 'daviddevdobrasil@gmail.com';
+        text.textContent = 'Guilherme22122004@gmail.com';
       } else if (i===2){
-        link.href = 'https://wa.me/5581994702499?text=Olá,%20gostaria%20de%20marcar%20uma%20entrevista.%20Você%20tem%20algum%20horário%20disponível?';
+        link.href = 'https://wa.me/5581985721098?text=Olá,%20gostaria%20de%20marcar%20uma%20entrevista.%20Você%20tem%20algum%20horário%20disponível?';
         img.src = './whatsapp.png';
-        text.textContent = '+55 81 994702499';
+        text.textContent = '+55 81 985721098';
       }else if(i===3){
-        link.href = 'https://www.instagram.com/daviddevbrasil/profilecard/?igsh=MXAwZDYwd2N1N3BqNA==';
+        link.href = 'https://www.instagram.com/guilhermeprofi/profilecard/?igsh=MXAwZDYwd2N1N3BqNA==';
         img.src = './insta.png';
-        text.textContent = '@daviddev';
+        text.textContent = '@guilhermeprofi';
         
       }
 
